@@ -19,16 +19,11 @@ const toggle = () => {
 <template>
   <UCard :onclick="toggle">
     <template #header>
-      {{ character.name }} 
-      <UBadge
-        class="absolute mx-2"
-        v-if="isFavorite"
-        icon="el:heart"
-        size="sm"
-        color="primary"
-        variant="soft"
-        :trailing="false"
-      />
+      <div class="flex justify-between">
+        {{ character.name }} 
+          <UIcon v-if="isFavorite" name="heroicons-solid:heart" class="bg-green-500 w-5 h-5 cursor-pointer" />
+          <UIcon v-if="!isFavorite" name="heroicons-outline:heart" class="bg-green-500 w-5 h-5 cursor-pointer" />
+      </div>
     </template>
 
     <img :src="character.image || ''" />
