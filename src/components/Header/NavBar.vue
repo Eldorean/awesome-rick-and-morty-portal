@@ -6,7 +6,6 @@
   const toggleMobileMenu = () => {
     mobileHidden.value = !mobileHidden.value
   }
-
 </script>
 
 <template>

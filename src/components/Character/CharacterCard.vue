@@ -29,7 +29,6 @@ const toggle = () => {
     <img :src="character.image || ''" />
 
     <template #footer>
-
       <div class="my-2">
         <span class="block text-xs font-light text-gray-400 dark:text-white">
           Location

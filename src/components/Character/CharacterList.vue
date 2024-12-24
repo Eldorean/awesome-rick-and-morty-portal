@@ -5,7 +5,6 @@
 </template>
 
 <style scoped>
-
 .charator-grid {
   @apply grid-cols-1
 }

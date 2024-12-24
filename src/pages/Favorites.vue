@@ -30,7 +30,6 @@
       <p class="p-2">
         <span>Hey live a little, pick some characters from
           <NuxtLink to="/characters" class="underline text-blue-600" >this</NuxtLink> page.
-          
           </span>
       </p>
       

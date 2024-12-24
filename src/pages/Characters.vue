@@ -32,8 +32,6 @@
 
     })
   }, {immediate: true})
-
-
 </script>
 
 <template>
