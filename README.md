@@ -3,7 +3,7 @@
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## versions
-node: v20.11.1
+node: v20.11.1__
 yarn: v1.22.22
 
 ## Setup
