@@ -37,7 +37,7 @@
 </script>
 
 <template>
-  <DefaultPage title="Charactors">
+  <DefaultPage title="characters">
     <template v-if="!isLoading">
       <CharacterList>
         <CharacterCard v-for="item in characters" :character="item" :key="item.id"  />

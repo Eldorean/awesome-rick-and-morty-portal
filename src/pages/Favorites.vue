@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import DefaultPage from '../components/Page/Page.vue';
-  import GetCharactersById from "../queries/GetCharactorsById.gql";
+  import GetCharactersById from "../queries/GetCharactersById.gql";
   import type { Query } from "~/__generated__/graphql";
 
   const store = useFavoriteCharacter();
@@ -19,7 +19,7 @@
 
 <template>
   <DefaultPage title="Favorite">
-    <h1 class="text-2xl p-2">And now for your favorite charactors!!!</h1>
+    <h1 class="text-2xl p-2">And now for your favorite characters!!!</h1>
     <template v-if="!isLoading">
       <CharacterList>
         <CharacterCard v-for="item in characters" :character="item"  :key="item.id" />

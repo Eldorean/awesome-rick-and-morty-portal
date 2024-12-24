@@ -1,4 +1,4 @@
-query GetCharactorsById($ids: [ID!]!) {
+query GetCharactrsById($ids: [ID!]!) {
   charactersByIds(ids: $ids) {
       id,
       name,

@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   routeRules: {
     '/': { prerender: true },
-    '/search': { ssr: false },
+    '/characters': { ssr: false },
     '/favorites': { ssr: false },
   },
   modules: [

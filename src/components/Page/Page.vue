@@ -7,27 +7,27 @@
 </script>
 
 <template>
-  <div class="flex flex-col m-auto max-w-screen-lg h-full">
+  <div class="flex flex-col h-full">
     <Head>
       <Title>{{ title }}</Title>
     </Head>
 
-    <div class="section flex-0">
-      <NavBar />
+    <div class="bg-gray-50">
+      <div class="max-w-screen-lg m-auto">
+        <NavBar class="m-auto max-w-screen-lg" />
+      </div>
+    </div>
+    
+    <div class="flex-1 p-4">
+      <div class="max-w-screen-lg m-auto">
+        <slot></slot>
+      </div>
     </div>
 
-    <div class="section flex-1 p-2">
-      <slot></slot>
-    </div>
-
-    <div class="section flex-0">
-      <Footer />
+    <div class="flex-0 p-2">
+      <div class="max-w-screen-lg m-auto">
+        <Footer />
+      </div>
     </div>
   </div>
 </template>
-
-<style lang="postcss">
-.section {
-  @apply p-2;
-}
-</style>

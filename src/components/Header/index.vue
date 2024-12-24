@@ -5,10 +5,8 @@
 
 <template>
   <NavBar>
-    <NavItem path="Home">Home</NavItem>
+    <div class="max-w-screen-lg">
+      <NavItem path="Home">Home</NavItem>
+    </div>
   </NavBar>
 </template>
-
-<style lang="scss" scoped>
-
-</style>
