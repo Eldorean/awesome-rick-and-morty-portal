@@ -1,0 +1,11 @@
+query GetCharactorsById($ids: [ID!]!) {
+  charactersByIds(ids: $ids) {
+      id,
+      name,
+      image,
+      location {
+        name,
+        type
+      }
+  }
+}

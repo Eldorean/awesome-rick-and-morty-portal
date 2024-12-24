@@ -3,11 +3,17 @@ export default defineNuxtConfig({
   srcDir: './src',
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
+  routeRules: {
+    '/': { prerender: true },
+    '/search': { ssr: false },
+    '/favorites': { ssr: false },
+  },
   modules: [
+    '@nuxt/ui',
     '@pinia/nuxt',
     'pinia-plugin-persistedstate/nuxt',
+    '@nuxtjs/tailwindcss',
     '@nuxtjs/apollo',
-    '@nuxtjs/tailwindcss'
   ],
   apollo: {
     clients: {
